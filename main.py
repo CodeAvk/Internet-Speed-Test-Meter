@@ -7,17 +7,17 @@ def Start():
 
     Uploading=round(test.upload()/(1024*1024),2)
     upload.config(text=Uploading)
-    # print(Uploading)
+    
 
     Downloading = round(test.download()/(1024*1024),2)
     download.config(text=Downloading)
     Download.config(text=Downloading)
-    # print(Downloading)
+    
 
     server_name=[]
     test.get_servers(server_name)
     ping.config(text=test.results.ping)
-    # print(test.results.ping)
+    
 
 root=Tk()
 root.title("@Avk Internet Speed Test")
